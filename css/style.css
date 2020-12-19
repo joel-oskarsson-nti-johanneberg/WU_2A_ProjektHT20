@@ -60,12 +60,6 @@ a:hover {
         opacity: 1;
     }
 
-    /*50% {
-        opacity: 0;
-        border-radius: 50%;
-        transform: scale(1.5, 1.5) rotate(180deg);
-    }*/
-
     to {
         opacity: 0.9;
         transform: scale(1.3, 1.3);
@@ -103,7 +97,8 @@ h2{
 .sec_img1{
     grid-area: img1;
     width: 100%;
-    height: 100%;
+    height: 120%;
+    /*margin-top: -5%;*/
 }
 
 .sec_tex1{
@@ -136,4 +131,122 @@ h2{
 .fo1{
     grid-area: footer;
     background:  rgb(66, 66, 60);
+}
+
+/*
+Styling för info-sidan.
+*/
+
+.container2{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 800px 950px 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "inf"
+        "res"
+        "fo"    
+    ;
+}
+
+.inf_sec{
+    grid-area: inf;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "iimg1 itex1"
+        "itex2 iimg2"
+    ;
+}
+
+.iimg1{
+    grid-area: iimg1;
+    width: 100%;
+    height: 100%;
+}
+
+.itex1{
+    grid-area: itex1;
+    background-color: gray;
+}
+
+.iimg2{
+    grid-area: iimg2;
+    width: 100%;
+    height: 100%;
+}
+
+.itex2{
+    grid-area: itex2;
+    background-color: gray;
+}
+
+.restauranger{
+    grid-area: res;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 150px 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "rhe rhe"
+        "rimg1 rimg2"
+        "rimg3 rimg4"
+    ;
+}
+
+.rest_header{
+    grid-area: rhe;
+    background-color: rgb(66, 66, 60);
+}
+
+.h2_res{
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+.rimg1{
+    grid-area: rimg1;
+    height: 100%;
+    width: 100%;
+}
+
+.rimg2{
+    grid-area: rimg2;
+    height: 100%;
+    width: 100%;
+}
+
+.rimg3{
+    grid-area: rimg3;
+    height: 100%;
+    width: 100%;
+}
+
+.rimg4{
+    grid-area: rimg4;
+    height: 100%;
+    width: 100%;
+}
+
+.footer2{
+    grid-area: fo;
+    background-color: rgb(66, 66, 60);
+}
+
+.ip{
+    margin: 5%;
+    margin-top: 1%;
+    font-family: "Comic Sans MS";
+    font-size: 14px;
+}
+
+.ih2{
+    margin-top: 4%;
+    font-family: "Brush Script MT";
+    font-size: 40px;
 }

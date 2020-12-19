@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.container{
+.container2{
     display: grid;
     height: 100%;
     width: 100%;
@@ -73,7 +73,8 @@
 }
 
 .h2_res{
-    margin-top: 3%;
+    margin-top: 5%;
+    font-size: 30px;
 }
 
 .rimg1{
@@ -100,7 +101,20 @@
     width: 100%;
 }
 
-.footer{
+.footer2{
     grid-area: fo;
     background-color: rgb(66, 66, 60);
+}
+
+p{
+    margin: 5%;
+    margin-top: 1%;
+    font-family: "Comic Sans MS";
+    font-size: 14px;
+}
+
+h2{
+    margin-top: 4%;
+    font-family: "Brush Script MT";
+    font-size: 40px;
 }

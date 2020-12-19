@@ -23,12 +23,15 @@
 
     <h2>1. Idébeskrivning</h2>
     <!-- Vad ska du göra? Vilken är din målgrupp? Om du utvecklar en tidigare sida; Vad ska du förändra/utveckla? -->
-    Min idé är att göra en hemsida för en restaurang som serverar gröt.
+    Min idé är att göra en hemsida för en restaurang som serverar gröt. Målgruppen är vuxna över 30 då restaurangen kommer vara relativt dyr att äta på(yngre människor brukar ha mindre pengar) och ungdomar brukar vanligtvis inte gilla gröt.
     <h2>2. Planering</h2>
 
     <h3>2.1 Handskiss</h3>
     <!-- Här lägger du en bild på din handskiss av layouten. Viktigt att du beskriver vilka boxelement som ska användas. Visa även hur du tänker med ditt grid (Hur många kolumner?) -->
     <img src="first_sketch.png">
+    Min tanke är att första sidan ska först ha 4 grid element där det tredje innehåller 6 grid element till.
+    Info-sidan ska ha 3 grid element där den första info-delen innehåller 4 stycken till och den andra delen
+    med grötrestauranger ska innehålla 6 stycken elemnet där h2-headern ska ta upp de 2 övre element i griden.
     <h3>2.2 Schema</h3>
     <!-- Vad ska du göra när? Inte för detaljerat. -->
 
@@ -36,7 +39,6 @@
         <tr>
             <th>Vecka</th><th>På lektionerna</th><th>Utanför lektionerna</th>
         </tr>
-
         <tr>
             <td>47</td>
             <td>
@@ -45,7 +47,7 @@
             </td>
             <td>
             <!-- Vad görs utanför lektionerna vecka 47? -->
-            Göra färdigt html-struktur
+            Göra färdigt html-struktur(vilka text-taggar och viss struktur som ska vara med)
             </td>
         </tr>
 
@@ -53,10 +55,11 @@
             <td>48</td>
             <td>
             <!-- Vad görs på lektionerna vecka 48? -->
-            Påbörja placering och design av sidans block
+            Påbörja placering och design av sidans block, börja lägga in färg och placera text i sidans grid-element.
             </td>
             <td>
             <!-- Vad görs utanför lektionerna vecka 48? -->
+            Photoshoppa några av sidans bilder, header-bakgrunden och restaurangbilderna.
             </td>
         </tr>
 
@@ -64,9 +67,11 @@
             <td>49</td>
             <td>
             <!-- Vad görs på lektionerna vecka 49? -->
+                Lägger in bilder och stylar sidorna ordetligt(placering och fontar).
             </td>
             <td>
             <!-- Vad görs utanför lektionerna vecka 49? -->
+                Få färdigt styling och färgschema så det iallfall ser ut som något av en hemsida och försöka få in bilderna på rätt plats(så de inte overlappar).                
             </td>
         </tr>
 
@@ -74,9 +79,11 @@
             <td>50</td>
             <td>
             <!-- Vad görs på lektionen vecka 50? -->
+                Göra de sista finjusteringarna och detaljerna för att lyfta sidan(t.ex. exakt placering av bilderna).
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 50? -->
+                Beroende på vad som är kvar att göra så gör jag det
             </td>
         </tr>
 
@@ -88,24 +95,51 @@
 
     <h3>Lektioner vecka 47</h3>
     <!-- Fyll på med dokumentation här. -->
-    Jag har påbörjat min idé och fixat en första startsida med viss css-grid struktur
+    Jag har påbörjat min idé och fixat en första startsida med css-grid struktur. Jag är väldigt säker nu på hur man får till en grid-struktur så det var lätt att sätta upp basdesignen och komma igång.
+    <img src="doku1.png" alt="" style="height: 20%; width: 20%;">
     <h3>Lektioner vecka 48</h3>
     <!-- Fyll på med dokumentation här. -->
-    fixat stor del av första sidans design, fixa img storlek
+    Lagt in text och photoshoppat bilder till info-delen av sidan. Min tanke var först att i css blurra en bild på gröt för headern men jag insåg att var svårare än jag trodde. Istället så använde jag photoshop för att enkelt lägga på ett filter och blurra gröt-bilden.
+    <img src="doku2.png" alt="" style="height: 20%; width: 20%;">
     <h3>Lektioner vecka 49</h3>
     <!-- Fyll på med dokumentation här. -->
-    designat menyn och text på hemisdan
+    Lagt in alla bilder och fått till en del av designen. Jag hade problem med att bilderna lade sig på varandra men jag ändrade overflow till hidden vilket löste problemet. 
+    <img src="doku3.png" alt="" style="height: 20%; width: 20%;">
     <h3>Lektioner vecka 50</h3>
     <!-- Fyll på med dokumentation här. -->
-
+    Försökter placera bilderna rätt. Istället för att använda img-taggen så använde jag background i css-stylingen. Då jag använde img-taggen så kunde jag inte positionera bilderna som jag ville utan att de overflowade fast att jag hade satt overflow till hidden. Det behövde dock inte göras på alla bilder då vissa redan hade rätt storlek och placering. Jag ville också fixa bulletsen som inte syntes på meny sidan. Det jag fick göra vara at tändra list-style-position till outside för att de skulle läggas sig bredvid texten.
+    prickarna ul
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
+    <img src="web-test.png" alt="">
+    Som man kan se på hemsidetestningen så funkade hemsidan perfekt på chrome och firefox men inte edge. Jag läste på om problemet med att elementen i nav sectionen inte lade sig på rätt plats. Det visade sig att Edge har stängt av funktionen space-evenly och jag hittade endast kod som jag inte förstod som kunde lösa problemet.
+
+    Det var inte jättemycket att fixa med valideringsverktyget. Jag behövde byta språk på sidorna eftersom jag använde loremtext. Men på infosidan så ville valideringsverktyget att jag skulle ha en h2-h6 tagg under css-grid sectionens på sidan. Problemet är bara att jag valde att inte ha en enda stor header utan h2 taggar nästlade i sectionens. Detta var ett designval som jag låter vara kvar.
+    Css valideringen visade inte på några problem.
+
+    Ifall man kollar kontrasterna med contrast-checker så ser man att kontrasten är väldigt dålig där jag använder den mörka gråa färgen(nav och footer). Jag ville dock ha ett grått färgschema som passade till grötens gråa färg och jag behövde ha kontrast mellan de gråa grid-areorna också så det fick bli en blandning av tillräcklligt mycket kontrast för att se texten men också så att det är skillnad i kontrast mellan grid-areorna.
 
     <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+    Jag var väldigt säker på hur man ny skapar css-gridar och startar upp ett projekt så det fick jag färdigt fort och enkelt.
+    Det första problemet jag stötte på var att jag ville ha blurrad bakgrund till headern på första sidan. Min tankte först var
+    att i css blurra bilden det visade sig sedan vara svårare än jag tänkt så jag använde photoshop istället. Det som hände sen
+    var att jag hade problem med placering av bilderna i griden. Men när jag började använda margin och liknande kommandon så
+    hoppade bilden ur sin grid-area, den lade sig som ett lager över och overlappade de andra bilderna. En lösning som till viss del
+    funkade var att ändra img-taggen till en section och sätta bilden som en bakgrundsbild. Då kunde jag flytta runt den men eftersom
+    bilden nu var en bakgrundsbild så fäste den sig på sidan och följde med när jag scrollade. Det hela slutade med att jag tog tillbaka
+    img taggen eftersom att valideringsverktyget inte heller gillade min lösning. Jag är osäker på varför inte margin funkade men 
+    det var förmodligen för att marginen syftade på en hel grid-area och inte bara bilden i grid-arean vilket resulterade i att jag flyttade
+    hela grid-arean och overlappade andra grid-areor. En andra grej som jag inte var nöjd med var vart ul-bulleten hamnade på
+    menysidan. Min tanke var att den skulle vara bredvid h2-taggeb men den lade sig mellan h2 och p-taggen. Det var eftersom
+    bulleten placeras bredvid hela li-taggen. Till nästa projekt kanske man ska ta bort bulleten på li-taggen och istället lägga till
+    den på h2-taggen i css koden manuellt. Så till nästa projekt eller som förbättring är det viktigaste
+    bilderna. Att jag istället skulle lära mig exakt hur man placerar och resizar dem för att få en snyggare sida.
+    Idéskissen jag ritade upp var inte så speciellt svår att designa så till nästa gång kanske jag kan komma på något 
+    mer avancerat.
 
 </body>
 </html>
