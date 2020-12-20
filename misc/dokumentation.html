@@ -71,7 +71,7 @@
             </td>
             <td>
             <!-- Vad görs utanför lektionerna vecka 49? -->
-                Få färdigt styling och färgschema så det iallfall ser ut som något av en hemsida och försöka få in bilderna på rätt plats(så de inte overlappar).                
+                Få färdigt styling och färgschema så det iallafall ser ut som något av en hemsida och försöka få in bilderna på rätt plats(så de inte overlappar).                
             </td>
         </tr>
 
@@ -116,7 +116,7 @@
     Som man kan se på hemsidetestningen så funkade hemsidan perfekt på chrome och firefox men inte edge. Jag läste på om problemet med att elementen i nav sectionen inte lade sig på rätt plats. Det visade sig att Edge har stängt av funktionen space-evenly och jag hittade endast kod som jag inte förstod som kunde lösa problemet.
 
     Det var inte jättemycket att fixa med valideringsverktyget. Jag behövde byta språk på sidorna eftersom jag använde loremtext. Men på infosidan så ville valideringsverktyget att jag skulle ha en h2-h6 tagg under css-grid sectionens på sidan. Problemet är bara att jag valde att inte ha en enda stor header utan h2 taggar nästlade i sectionens. Detta var ett designval som jag låter vara kvar.
-    Css valideringen visade inte på några problem.
+    Css valideringen visade inte på några problem. Jag delade dock upp stylingen i två css-dokument ett för info och main-sidan och ett för meny sidan då de hade olika stylingar.
 
     Ifall man kollar kontrasterna med contrast-checker så ser man att kontrasten är väldigt dålig där jag använder den mörka gråa färgen(nav och footer). Jag ville dock ha ett grått färgschema som passade till grötens gråa färg och jag behövde ha kontrast mellan de gråa grid-areorna också så det fick bli en blandning av tillräcklligt mycket kontrast för att se texten men också så att det är skillnad i kontrast mellan grid-areorna.
 
@@ -134,12 +134,12 @@
     img taggen eftersom att valideringsverktyget inte heller gillade min lösning. Jag är osäker på varför inte margin funkade men 
     det var förmodligen för att marginen syftade på en hel grid-area och inte bara bilden i grid-arean vilket resulterade i att jag flyttade
     hela grid-arean och overlappade andra grid-areor. En andra grej som jag inte var nöjd med var vart ul-bulleten hamnade på
-    menysidan. Min tanke var att den skulle vara bredvid h2-taggeb men den lade sig mellan h2 och p-taggen. Det var eftersom
+    menysidan. Min tanke var att den skulle vara bredvid h2-taggen men den lade sig mellan h2 och p-taggen. Det var eftersom
     bulleten placeras bredvid hela li-taggen. Till nästa projekt kanske man ska ta bort bulleten på li-taggen och istället lägga till
     den på h2-taggen i css koden manuellt. Så till nästa projekt eller som förbättring är det viktigaste
     bilderna. Att jag istället skulle lära mig exakt hur man placerar och resizar dem för att få en snyggare sida.
-    Idéskissen jag ritade upp var inte så speciellt svår att designa så till nästa gång kanske jag kan komma på något 
-    mer avancerat.
+    Jag känner mig rätt så säker på de saker vi gått igenom och min idéskiss var inte jätteavancerad så hela projektet
+    flöt på bra. 
 
 </body>
 </html>
